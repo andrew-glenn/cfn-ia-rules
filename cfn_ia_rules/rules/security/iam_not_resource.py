@@ -36,7 +36,7 @@ class IAMNotResource(CloudFormationLintRule):
     source_url = "https://github.com/aws-ia/cfn-ia-rules/blob/main/cfn_ia_rules/rules/security/iam_not_resource.py"
     tags = ["iam"]
     SEARCH_PROPS = ["Resource"]
-    CFN_NAG_RULES = "W21", "W15"] 
+    CFN_NAG_RULES = ["W21", "W15"] 
 
     def match(self, cfn):
         """Basic Matching"""
